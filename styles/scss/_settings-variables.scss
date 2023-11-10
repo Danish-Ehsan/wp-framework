@@ -8,10 +8,10 @@ $icon-font: "Font Awesome 5 Pro";
 
 // Colors
 
-$key-color: #3bb449;
-$key-color-dark: darken($key-color, 10%);
+$key-color: #0e9960;
+$key-color-dark: darken($key-color, 5%);
 $secondary-color: #000000;
-$secondary-color-dark: darken($secondary-color, 20%);
+$secondary-color-dark: darken($secondary-color, 5%);
 $notice-color: #00bdff;
 $warning-color: #ebd233;
 $success-color: #00b407;
@@ -44,9 +44,9 @@ $padding-right: 14rem;
 $padding-bottom: 10rem;
 $padding-left: 14rem;
 
-$mobile-padding-top: 0;
+$mobile-padding-top: 6rem;
 $mobile-padding-right: 4rem;
-$mobile-padding-bottom: 0;
+$mobile-padding-bottom: 6rem;
 $mobile-padding-left: 4rem;
 
 $base: 10;
