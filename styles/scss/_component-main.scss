@@ -1,0 +1,24 @@
+@use "settings-variables" as *;
+
+.c-main {
+	position: relative;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-grow: 1; //for sticky footer
+	flex-shrink: 0;
+	padding: $padding-top $padding-right $padding-bottom $padding-left;
+    margin: 0 0 $footer-margin;
+    
+    @media #{$tablet-side} {
+        padding: 0 6.2rem;
+    }
+        
+    //use mobile padding variables at smaller screen sizes
+    @media #{$phone-side} {
+        padding: $mobile-padding-top $mobile-padding-right $mobile-padding-bottom $mobile-padding-left;
+        margin-bottom: 7rem;
+    }
+}
