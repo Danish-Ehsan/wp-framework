@@ -64,6 +64,17 @@ if ( ! function_exists( 'wp_framework_get_categories' ) ) {
     }
 }
 
+if ( ! function_exists( 'wp_framework_get_tags' ) ) {
+    function wp_framework_get_tags() {
+        /* translators: used between list items, there is a space after the comma */
+        $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wp-framework' ) );
+        if ( $tags_list ) {
+            /* translators: 1: list of tags. */
+            printf( '<div class="c-card__tags">' . esc_html__( 'Tags: %1$s', 'wp-framework' ) . '</div>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+        }
+    }
+}
+
 if ( ! function_exists( 'wp_framework_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
