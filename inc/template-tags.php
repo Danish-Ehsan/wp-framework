@@ -86,18 +86,18 @@ if ( ! function_exists( 'wp_framework_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'wp-framework' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wp-framework' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<div class="cat-links">' . esc_html__( 'Posted in %1$s', 'wp-framework' ) . '</div>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wp-framework' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wp-framework' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<div class="tags-links">' . esc_html__( 'Tagged %1$s', 'wp-framework' ) . '</div>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+        if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
 			comments_popup_link(
 				sprintf(
@@ -129,8 +129,8 @@ if ( ! function_exists( 'wp_framework_entry_footer' ) ) :
 				),
 				wp_kses_post( get_the_title() )
 			),
-			'<span class="edit-link">',
-			'</span>'
+			'<div class="edit-link">',
+			'</div>'
 		);
 	}
 endif;
