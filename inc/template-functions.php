@@ -35,3 +35,11 @@ function wp_framework_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'wp_framework_pingback_header' );
+
+/**
+ * Change the default ellipsis [...] at the end of the_excerpt() calls
+ */
+function new_excerpt_more($more) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
