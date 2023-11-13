@@ -1623,7 +1623,8 @@ nav.c-nav
   right: 0.5rem;
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 .c-card__cat a, .c-card__tags a {
   font-size: clamp(1rem, calc( 1rem +  0.0934142924vw ), 1.2rem);
