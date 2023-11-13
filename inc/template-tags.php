@@ -56,7 +56,7 @@ endif;
 if ( ! function_exists( 'wp_framework_get_categories' ) ) {
     function wp_framework_get_categories() {
         /* translators: used between list items, there is a space after the comma */
-        $categories_list = get_the_category_list( esc_html__( ', ', 'wp-framework' ) );
+        $categories_list = get_the_category_list( esc_html__( ' ', 'wp-framework' ) );
         if ( $categories_list ) {
             /* translators: 1: list of categories. */
             printf( '<div class="c-card__cat">' . esc_html__( '%s', 'wp-framework' ) . '</div>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -67,7 +67,7 @@ if ( ! function_exists( 'wp_framework_get_categories' ) ) {
 if ( ! function_exists( 'wp_framework_get_tags' ) ) {
     function wp_framework_get_tags() {
         /* translators: used between list items, there is a space after the comma */
-        $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wp-framework' ) );
+        $tags_list = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'wp-framework' ) );
         if ( $tags_list ) {
             /* translators: 1: list of tags. */
             printf( '<div class="c-card__tags">' . esc_html__( 'Tags: %1$s', 'wp-framework' ) . '</div>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
