@@ -159,7 +159,7 @@ if ( ! function_exists( 'wp_framework_post_thumbnail' ) ) :
 			<a class="c-card__image" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1" aria-label="View post: <?php the_title() ?>">
 				<?php
 					the_post_thumbnail(
-						'post-thumbnail',
+						'medium',
 						array(
 							'alt' => the_title_attribute(
 								array(
