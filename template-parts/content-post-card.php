@@ -35,7 +35,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="c-card__footer">
-        <a href="' . get_the_permalink() . '" class="c-btn c-btn--sm">Read More</a>
+        <a href="<?= the_permalink() ?>" class="c-btn c-btn--sm">Read More</a>
 		<?php //wp_framework_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
