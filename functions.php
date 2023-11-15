@@ -181,3 +181,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Navigation functions including custom css classes
  */
 require get_template_directory() . '/inc/navigation-functions.php';
+
+/**
+ * Functions for adding Company Info settings
+ */
+require get_template_directory() . '/inc/company-settings.php';
