@@ -88,27 +88,27 @@ function wp_framework_company_info_callback() {
 
 //Render Company Name field
 function wp_framework_company_name_callback() {
-    echo '<input type="text" name="company_name" value="' . get_option('company_name') . '" />';
+    echo '<input type="text" name="company_name" value="' . get_option('company_name') . '" class="regular-text"/>';
 }
 
 //Render Company Address Line 1 field
 function wp_framework_company_address1_callback() {
-    echo '<input type="text" name="company_address1" value="' . get_option('company_address1') . '" />';
+    echo '<input type="text" name="company_address1" value="' . get_option('company_address1') . '" class="regular-text"/>';
 }
 
 //Render Company Address Line 2 field
 function wp_framework_company_address2_callback() {
-    echo '<input type="text" name="company_address2" value="' . get_option('company_address2') . '" />';
+    echo '<input type="text" name="company_address2" value="' . get_option('company_address2') . '" class="regular-text"/>';
 }
 
 //Render Company Phone Number field
 function wp_framework_company_phone_callback() {
-    echo '<input type="text" name="company_phone" value="' . get_option('company_phone') . '" />';
+    echo '<input type="text" name="company_phone" value="' . get_option('company_phone') . '" class="regular-text"/>';
 }
 
 //Render Company Email field
 function wp_framework_company_email_callback() {
-    echo '<input type="text" name="company_email" value="' . get_option('company_email') . '" />';
+    echo '<input type="text" name="company_email" value="' . get_option('company_email') . '" class="regular-text"/>';
 }
 
 ?>
