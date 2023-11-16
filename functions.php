@@ -183,6 +183,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/inc/navigation-functions.php';
 
 /**
+ * Functions for adding custom menu pages
+ */
+require get_template_directory() . '/inc/menu-pages.php';
+
+/**
  * Functions for adding Company Info settings
  */
 require get_template_directory() . '/inc/company-settings.php';
