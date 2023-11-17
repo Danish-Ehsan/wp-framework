@@ -33,7 +33,7 @@
                 ?>
             </div><!-- .site-branding -->
 
-            <nav class="c-nav">
+            <nav id="primary-menu" class="c-nav">
                 <?php
                 //See inc/navigation-functions.php for other css class definitions
                 wp_nav_menu(
