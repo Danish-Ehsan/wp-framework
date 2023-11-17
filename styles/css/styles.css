@@ -780,6 +780,7 @@ nav.c-nav
     z-index: 20;
     pointer-events: none;
     transform: none;
+    transition: right 0.2s linear 0.15s;
     /*        &:after {
                 content: '';
                 position: fixed;
@@ -793,9 +794,8 @@ nav.c-nav
             }*/
   }
   .c-nav.is-visible {
-    left: 0;
+    right: 0;
     pointer-events: auto;
-    transition: left 0.2s linear 0.15s;
     /*            &:after {
                     left: 0;
                     transition: left 0.2s linear 0.15s;

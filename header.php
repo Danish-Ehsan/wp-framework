@@ -33,7 +33,7 @@
                 ?>
             </div><!-- .site-branding -->
 
-            <nav id="primary-menu" class="c-nav">
+            <nav id="primary-menu" class="c-nav js-nav">
                 <?php
                 //See inc/navigation-functions.php for other css class definitions
                 wp_nav_menu(
@@ -48,7 +48,7 @@
                 );
                 ?>
             </nav><!-- #site-navigation -->
-            <button class="c-nav__show js-toggleNav" data-nav="standard" aria-expanded="false" aria-controls="primary-menu" aria-label="Navigation expand button">
+            <button class="c-nav__show js-navtoggle" data-nav="standard" aria-expanded="false" aria-controls="primary-menu" aria-label="Navigation expand button">
                 <div class="c-nav__showbtn">
                     <div class="c-nav__showbtn-line"></div>
                     <div class="c-nav__showbtn-line"></div>
