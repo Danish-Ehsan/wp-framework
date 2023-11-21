@@ -15,3 +15,9 @@
 @use "component-footer";
 @use "component-cards";
 @use "component-btn";
+
+//Wordpress blocks
+@use "generic-block";
+@use "block-banner";
+@use "block-carousel";
+@use "block-imgtext";
