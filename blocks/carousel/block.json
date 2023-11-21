@@ -1,0 +1,16 @@
+{
+    "name": "acf/carousel",
+    "title": "Image Carousel",
+    "description": "A block for an image slideshow.",
+    "script": "block-carousel",
+    "category": "olcpr_blocks",
+    "icon": "format-gallery",
+    "keywords": ["image", "images", "gallery", "carousel", "slideshow"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "carousel-template.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
