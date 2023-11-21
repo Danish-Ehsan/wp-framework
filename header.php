@@ -58,4 +58,4 @@
         </div>
 	</header><!-- #masthead -->
 
-    <main class="c-main">
+    <main class="c-main <?php post_class() ?>">
