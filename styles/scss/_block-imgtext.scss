@@ -1,0 +1,19 @@
+.b-imgtext {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.b-imgtext__content {
+    display: flex;
+    column-gap: 4%;
+}
+
+.b-imgtext__image {
+    width: 38%;
+    flex-shrink: 0;
+
+    &--fullwidth img,
+    &--fullwidth a {
+        width: 100%;
+    }
+}

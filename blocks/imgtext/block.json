@@ -1,0 +1,15 @@
+{
+    "name": "acf/imgtext",
+    "title": "Image & Text",
+    "description": "A two column block with an image and text",
+    "category": "olcpr_blocks",
+    "icon": "align-pull-left",
+    "keywords": ["image", "text", "two column"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "imgtext-template.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
