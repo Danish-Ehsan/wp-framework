@@ -1,0 +1,15 @@
+{
+    "name": "acf/banner",
+    "title": "Image Banner",
+    "description": "A block for an image banner with 2 separate images",
+    "category": "olcpr_blocks",
+    "icon": "format-image",
+    "keywords": ["image", "images", "gallery", "banner"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "banner-template.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
