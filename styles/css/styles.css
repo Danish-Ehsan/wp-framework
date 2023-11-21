@@ -399,6 +399,14 @@ h5:first-child, .h5:first-child,
 h6:first-child, .h6:first-child {
   margin-top: 0;
 }
+h1:last-child, .h1:last-child,
+h2:last-child, .h2:last-child,
+h3:last-child, .h3:last-child,
+h4:last-child, .h4:last-child,
+h5:last-child, .h5:last-child,
+h6:last-child, .h6:last-child {
+  margin-bottom: 0;
+}
 
 h1, .h1 {
   font-family: "Poppins", sans-serif;
@@ -541,7 +549,7 @@ blockquote p {
 .l-content {
   position: relative;
   width: 100%;
-  max-width: 133.4rem;
+  max-width: 137.8rem;
 }
 
 .l-content--wide {
@@ -549,7 +557,11 @@ blockquote p {
 }
 
 .l-content--narrow {
-  max-width: 110rem;
+  max-width: 114.6rem;
+}
+
+.l-content--fullwidth {
+  max-width: none;
 }
 
 .l-row, .l-column {
@@ -558,7 +570,7 @@ blockquote p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 133.4rem;
+  max-width: 137.8rem;
 }
 @media screen and (max-width: 769px) {
   .l-row, .l-column {
@@ -571,19 +583,19 @@ blockquote p {
 }
 
 .l-row--narrow {
-  max-width: 110rem;
+  max-width: 114.6rem;
 }
 
 .l-column {
   flex-direction: column;
 }
 
-.l-grid {
+.l-grid, .c-footer__content {
   display: grid;
   position: relative;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  column-gap: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  column-gap: 3.2%;
   row-gap: 5rem;
   padding: 0;
   margin: 0;
@@ -906,6 +918,7 @@ nav.c-nav
 .c-nav__item:last-of-type .c-nav__dropdown {
   left: auto;
   right: 0;
+  transform: none;
 }
 
 .has-dropdown:hover > a,
@@ -1227,12 +1240,8 @@ nav.c-nav
 }
 
 .c-footer__content {
-  display: flex;
   width: 100%;
-  max-width: 133.4rem;
-  column-gap: 12%;
-  row-gap: 10rem;
-  justify-content: space-between;
+  max-width: 137.8rem;
 }
 @media screen and (max-width: 992px) {
   .c-footer__content {
@@ -1755,6 +1764,40 @@ nav.c-nav
 
 .c-btn--alignbottom {
   margin-top: auto;
+}
+
+.block {
+  margin-top: clamp(6rem, calc( 1rem +  7.4731433909vw ), 12rem);
+}
+
+.block--fullwidth + .block--fullwidth {
+  margin-top: 0;
+}
+
+.b-banner {
+  flex-direction: row;
+}
+
+.b-banner__img {
+  min-width: 0;
+}
+
+.b-imgtext {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.b-imgtext__content {
+  display: flex;
+  column-gap: 4%;
+}
+
+.b-imgtext__image {
+  width: 38%;
+  flex-shrink: 0;
+}
+.b-imgtext__image--fullwidth img, .b-imgtext__image--fullwidth a {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

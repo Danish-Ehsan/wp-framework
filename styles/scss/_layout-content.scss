@@ -13,3 +13,7 @@
 .l-content--narrow {
 	max-width: $narrow-site-width;
 }
+
+.l-content--fullwidth {
+	max-width: none;
+}

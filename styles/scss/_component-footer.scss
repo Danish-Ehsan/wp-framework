@@ -1,5 +1,6 @@
 @use "settings-variables" as *;
 @use "settings-mixins" as *;
+@use "layout-grid" as *;
 
 .c-footer {
     width: 100%;
@@ -26,12 +27,10 @@
 }
 
 .c-footer__content {
-    display: flex;
+    @extend .l-grid;
+
     width: 100%;
     max-width: $site-width;
-    column-gap: 12%;
-    row-gap: 10rem;
-    justify-content: space-between;
     
     @media #{$tablet-side} {
         display: grid;

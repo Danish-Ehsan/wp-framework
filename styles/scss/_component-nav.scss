@@ -180,6 +180,7 @@ nav.c-nav
 .c-nav__item:last-of-type .c-nav__dropdown {
     left: auto;
     right: 0;
+    transform: none;
 }
 
 // Trigger the dropdown when hovering/focusing the list element
