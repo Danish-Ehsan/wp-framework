@@ -1,0 +1,15 @@
+{
+    "name": "acf/text",
+    "title": "Text",
+    "description": "A text block",
+    "category": "olcpr_blocks",
+    "icon": "text",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-template.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
